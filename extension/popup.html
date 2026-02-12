@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Memory Search</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Page Memory</h1>
+    <p class="subtitle">Search across pages you've visited</p>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="What are you looking for?" autocomplete="off">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="results" class="results">
+      <!-- results will be injected here -->
+    </div>
+
+    <div class="footer">
+      <span id="index-count">0 pages indexed</span>
+      <button id="index-btn" class="index-btn">Index This Page</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

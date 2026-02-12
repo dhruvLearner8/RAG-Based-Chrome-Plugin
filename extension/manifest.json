@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Page Memory Search",
+  "description": "Index pages you visit and search them later with semantic search",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
